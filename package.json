@@ -1,0 +1,38 @@
+{
+	"private": true,
+	"name": "scrape-klimaschutz-planer-reports",
+	"description": "Scrape greenhouse gas emission reports of German municipalities from klimaschutz-planer.de.",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"example.js"
+	],
+	"keywords": [
+		"greenhouse gas",
+		"climate",
+		"co2",
+		"thg"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/scrape-klimaschutz-planer-reports",
+	"repository": "derhuerst/scrape-klimaschutz-planer-reports",
+	"bugs": "https://github.com/derhuerst/scrape-klimaschutz-planer-reports/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=18"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"eslint": "^8.0.0",
+		"tap-min": "^2.0.0",
+		"tape": "^5.0.1"
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"test": "env NODE_ENV=dev node test.js | tap-min",
+		"prepublishOnly": "npm run lint && npm test"
+	}
+}
