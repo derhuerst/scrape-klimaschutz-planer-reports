@@ -19,7 +19,59 @@ npm install derhuerst/scrape-klimaschutz-planer-reports
 ## Usage
 
 ```js
-// todo
+import {fetchMunicipalities} from 'scrape-klimaschutz-planer-reports'
+
+const year = 2015
+await fetchMunicipalities(year)
+```
+
+```js
+Map(1594) {
+	'053340002002' => {
+		communeKey: '053340002002',
+		communeName: 'Aachen, Stadt',
+		year: null,
+		relationId: null,
+		logo: null,
+		einwohner: -1,
+		haushalte: -1,
+		thgVK: -1,
+		thgST: -1,
+		thgHH: -1,
+		targets: [],
+		pinLocations: [ [Array] ],
+		hasReport: false,
+		isBundle: false,
+		bundleCommunes: [ '053340002002' ],
+		fromCache: true,
+		reportsConfidential: false
+	},
+	// …
+	'073310003003' => {
+		communeKey: '073310003003',
+		communeName: 'Alzey, Stadt',
+		year: 2015,
+		relationId: null,
+		logo: null,
+		einwohner: 17826,
+		haushalte: 7860,
+		thgVK: 75474.236237466,
+		thgST: 132180.261983461,
+		thgHH: 55533.31376647953,
+		targets: [],
+		pinLocations: [
+			[49.745739919289356, 8.097031526903558],
+		],
+		hasReport: true,
+		isBundle: false,
+		bundleCommunes: [
+			'073310003003',
+		],
+		fromCache: true,
+		reportsConfidential: false,
+	},
+	// …
+}
 ```
 
 
